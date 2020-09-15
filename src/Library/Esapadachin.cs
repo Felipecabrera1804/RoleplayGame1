@@ -5,11 +5,11 @@ namespace Library
     public class Espadachin
     {
 
-        public Espadachin(String nombre, int vida, int ataque, int defensa, int resistencia, Escudo escudo)
+        public Espadachin(String nombre, int vida, int ataque, int defensa, int resistencia, Espada espada,Escudo escudo)
         {
             this.Nombre = nombre;
             this.Vida = vida;
-            this.Ataque = ataque;
+            this.Ataque = ataque + espada.Daño;
             this.Defensa = defensa + escudo.Defensa;
             this.Resistencia = resistencia;
         }
