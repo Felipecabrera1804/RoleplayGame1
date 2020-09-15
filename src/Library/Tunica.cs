@@ -2,9 +2,9 @@ using System;
 
 namespace Library
 {
-    public class Armadura
+    public class Tunica
     {
-        public Armadura(int defensa, int resistencia, int durabilidad)
+        public Tunica(int defensa, int resistencia, int durabilidad)
         {
             this.Defensa = defensa;
             this.Resistencia = resistencia;
