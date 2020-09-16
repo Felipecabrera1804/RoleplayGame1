@@ -12,6 +12,7 @@ namespace Library
             this.Defensa = defensa + armadura.Defensa;
             this.Resistencia = resistencia + armadura.Resistencia;
             this.DañoMagico = conocimiento + libroHechizos.Daño;
+            this.Cura= 20;
         }
         public int Vida{get;set;}
         public string Nombre{get;set;}
@@ -19,5 +20,6 @@ namespace Library
         public int Resistencia {get;set;}
         public int Ataque {get;set;}
         public int DañoMagico {get;set;}
+        public int Cura {get;set;}
     }
 }
