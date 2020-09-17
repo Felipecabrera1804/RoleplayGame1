@@ -18,7 +18,7 @@ namespace Program
             Console.WriteLine();
             Console.WriteLine($"Legolaz HP:{legolaz.Vida}");
             Console.WriteLine("Gimli ataca a Legolaz");
-            legolaz.Vida = Ataque.Atacar(gimli.Ataque,legolaz.Vida);
+            legolaz.Vida = Ataque.Atacar(gimli.Ataque,legolaz.Vida,legolaz.Defensa);
             Console.WriteLine($"Legolaz HP:{legolaz.Vida}");
             Console.WriteLine();
             Console.WriteLine($"Eldigan HP:{eldigan.Vida}");

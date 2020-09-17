@@ -4,9 +4,13 @@ namespace Library
 {
     public class Ataque
     {
-        public static int Atacar(int ataque, int vida)
+        public static int Atacar(int ataque, int vida, int aguante)
         {
-            vida=vida - ataque;
+            int nuevavida=vida + aguante - ataque;
+            if(nuevavida<=vida)
+            {
+                vida = nuevavida;
+            }
             if(vida<0)
             {
                vida=0; 
