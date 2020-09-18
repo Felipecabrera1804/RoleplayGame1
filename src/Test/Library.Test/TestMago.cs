@@ -54,6 +54,7 @@ namespace Test.Library
 [Test]
          public void ValidValueDefense ()
         {
+       
         Assert.AreEqual(60,gandalf.Defensa);
         }
         
@@ -64,7 +65,8 @@ namespace Test.Library
 [Test]
         public void valorAtaque()
     {
-        Assert.AreEqual(5,Ataque.Atacar(gimli.Ataque, gandalf.Vida, gandalf.Defensa));
+        this.gandalf.Vida=Ataque.Atacar(gimli.Ataque, gandalf.Vida, gandalf.Defensa);
+        Assert.AreEqual(5,this.gandalf.Vida);
    
     }
 
@@ -74,7 +76,8 @@ namespace Test.Library
 [Test]
         public void valorCuracion()
     {
-        Assert.AreEqual(30,Curar.Curacion(elfi.Cura,gandalf.Vida));
+        this.gandalf.Vida=Curar.Curacion(elfi.Cura,gandalf.Vida);
+        Assert.AreEqual(30,this.gandalf.Vida);
    
     }
 
