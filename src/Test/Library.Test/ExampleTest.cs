@@ -11,6 +11,7 @@ namespace Test.Library
         [Test]
         public void Vida_despues_de_ataque()
         {
+            // Verifica que la cantidad de vida cambie al ser atacado
             Espada excalibur = new Espada(40);
             Armadura hierro = new Armadura(5,3,20);
             Lanza gugnir = new Lanza(30);
@@ -23,6 +24,7 @@ namespace Test.Library
         [Test]
         public void Armadura_rota()
         {
+            // Verifica que la armadura sea capaz de romperse cambiando su defensa a 0
             Espada excalibur = new Espada(0);
             Armadura hierro = new Armadura(5,3,20);
             Armadura hierro2 = new Armadura(5,3,20);

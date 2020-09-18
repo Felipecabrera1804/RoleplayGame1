@@ -6,6 +6,7 @@ namespace Library
     {
         public static int Atacar(int ataque, int vida, int aguante)
         {
+            // Devuelve una cantidad de vida reducida, en base al daño recibido
             int nuevavida=vida + aguante - ataque;
             if(nuevavida<=vida)
             {
