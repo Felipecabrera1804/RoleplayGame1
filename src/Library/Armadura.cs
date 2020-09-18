@@ -15,7 +15,7 @@ namespace Library
         public int Durabilidad {get;set;}
         public void Desgaste()
         {
-            this.Durabilidad -= 1;
+            this.Durabilidad = this.Durabilidad - 1;
             if (this.Durabilidad==0)
             {
                 this.Defensa=0;
